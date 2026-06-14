@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio — [Nama Kamu]</title>
+<title>Portfolio — Claudia Krid</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -371,6 +371,11 @@ section { position: relative; z-index: 2; }
   transition: transform .25s, box-shadow .25s, border-color .25s;
 }
 .acard:hover { transform: translateY(-5px) rotate(-1deg); box-shadow: 0 16px 40px rgba(108,63,232,0.12); border-color: var(--purple-mid); }
+.acard.acard-purple { background: var(--purple); border-color: var(--purple); }
+.acard.acard-purple .acard-num { color: var(--yellow); }
+.acard.acard-purple .acard-label { color: rgba(255,255,255,0.75); }
+.acard.acard-purple .acard-emoji { opacity: 0.35; filter: brightness(10); }
+.acard.acard-purple:hover { border-color: var(--purple-dark); box-shadow: 0 16px 40px rgba(108,63,232,0.35); }
 .acard:nth-child(2):hover { transform: translateY(-5px) rotate(1deg); }
 .acard:nth-child(3):hover { transform: translateY(-5px) rotate(1deg); }
 .acard:nth-child(4):hover { transform: translateY(-5px) rotate(-1deg); }
@@ -431,7 +436,13 @@ section { position: relative; z-index: 2; }
 
 .pcard-title {
   font-family: 'Fredoka', sans-serif;
-  font-weight: 800; font-size: 1.2rem;
+  font-weight: 800; font-size: 1.6rem;
+  letter-spacing: 0em; margin-bottom: 10px;
+}
+
+.pcard-subtitle {
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 500; font-size: 1.2rem;
   letter-spacing: 0em; margin-bottom: 10px;
 }
 .pcard-desc { font-size: 0.88rem; color: var(--muted); line-height: 1.7; flex: 1; margin-bottom: 20px; }
@@ -629,12 +640,12 @@ footer a:hover { text-decoration: underline; }
 
 <!-- ══ NAV ══ -->
 <nav id="nav">
-  <a href="#" class="nav-logo">NK<span class="nav-logo-dot"></span></a>
+  <a href="#" class="nav-logo">C<span class="nav-logo-dot"></span></a>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#experience">Experience</a></li>
-    <li><a href="#contact" class="nav-cta">Hire me ✦</a></li>
+    <!-- <li><a href="#contact" class="nav-cta">Hire me ✦</a></li> -->
   </ul>
 </nav>
 
@@ -650,21 +661,19 @@ footer a:hover { text-decoration: underline; }
   <svg class="squiggle" style="top:30%;right:30%;width:20px;opacity:0.35" viewBox="0 0 20 20"><rect x="2" y="2" width="16" height="16" rx="4" fill="#6C3FE8" transform="rotate(15 10 10)"/></svg>
   <svg class="squiggle" style="bottom:30%;left:38%;width:16px;opacity:0.3" viewBox="0 0 20 20"><polygon points="10,1 13,7 20,8 15,13 16,20 10,17 4,20 5,13 0,8 7,7" fill="#F5C842"/></svg>
 
-  <span class="hero-tag"><span class="hero-tag-dot"></span>Tersedia untuk peluang baru</span>
-
   <h1 class="hero-h1">
-    <span class="gray">Halo, saya</span><br>
-    <span class="name-wrap">[Nama Kamu]</span>
+    <span class="gray">Hi, I'm</span><br>
+    <span class="name-wrap">Claudia Melati Krid</span>
   </h1>
 
   <p class="hero-p">
-    Mahasiswa Teknik Informatika yang suka bikin hal-hal digital yang
-    <em>fungsional</em>, <em>indah</em>, dan pastinya <em>berkesan</em>.
+    an Information System and Technology student who is passionate about merging
+    <em>business</em> and <em>technology</em>
   </p>
 
   <div class="hero-actions">
-    <a href="#projects" class="btn-purple">Lihat Project ↓</a>
-    <a href="#contact" class="btn-outline">Hubungi Saya →</a>
+    <a href="#projects" class="btn-purple">See Projects ↓</a>
+    <a href="#contact" class="btn-outline">Contact Me →</a>
   </div>
 
   <div class="hero-scroll">
@@ -676,69 +685,67 @@ footer a:hover { text-decoration: underline; }
 <!-- ══ MARQUEE ══ -->
 <div class="marquee-wrap">
   <div class="marquee-track">
-    <div class="marquee-item"><span class="marquee-star">✦</span>Web Development</div>
-    <div class="marquee-item"><span class="marquee-star">✦</span>UI Design</div>
-    <div class="marquee-item"><span class="marquee-star">✦</span>React</div>
-    <div class="marquee-item"><span class="marquee-star">✦</span>Python</div>
-    <div class="marquee-item"><span class="marquee-star">✦</span>Machine Learning</div>
-    <div class="marquee-item"><span class="marquee-star">✦</span>Database</div>
-    <div class="marquee-item"><span class="marquee-star">✦</span>Open Source</div>
     <div class="marquee-item"><span class="marquee-star">✦</span>Problem Solving</div>
-    <div class="marquee-item"><span class="marquee-star">✦</span>Web Development</div>
+    <div class="marquee-item"><span class="marquee-star">✦</span>Consulting</div>
     <div class="marquee-item"><span class="marquee-star">✦</span>UI Design</div>
-    <div class="marquee-item"><span class="marquee-star">✦</span>React</div>
     <div class="marquee-item"><span class="marquee-star">✦</span>Python</div>
-    <div class="marquee-item"><span class="marquee-star">✦</span>Machine Learning</div>
-    <div class="marquee-item"><span class="marquee-star">✦</span>Database</div>
-    <div class="marquee-item"><span class="marquee-star">✦</span>Open Source</div>
+    <div class="marquee-item"><span class="marquee-star">✦</span>C</div>
+    <div class="marquee-item"><span class="marquee-star">✦</span>Java</div>
     <div class="marquee-item"><span class="marquee-star">✦</span>Problem Solving</div>
+    <div class="marquee-item"><span class="marquee-star">✦</span>Consulting</div>
+    <div class="marquee-item"><span class="marquee-star">✦</span>UI Design</div>
+    <div class="marquee-item"><span class="marquee-star">✦</span>Python</div>
+    <div class="marquee-item"><span class="marquee-star">✦</span>C</div>
+    <div class="marquee-item"><span class="marquee-star">✦</span>Java</div>
   </div>
 </div>
 
 <!-- ══ ABOUT ══ -->
 <section id="about">
 <div class="container">
-  <div class="s-chip reveal"><span class="s-chip-dot"></span>Tentang saya</div>
-  <h2 class="s-title reveal">Siapa <span class="hi">saya</span> sebenarnya?</h2>
+  <div class="s-chip reveal"><span class="s-chip-dot"></span>About me</div>
+  <h2 class="s-title reveal">Who <span class="hi">am I</span>, really?</h2>
 
   <div class="about-grid">
     <div class="about-body reveal">
-      <p>Saya adalah seorang <b>mahasiswa Teknik Informatika</b> yang percaya bahwa kode yang baik bukan hanya soal logika — tapi juga soal pengalaman dan estetika.</p>
-      <p>Di luar kuliah, saya aktif <b>membangun proyek sendiri</b>, berkontribusi ke komunitas developer, dan terus belajar teknologi baru. Saya enjoy banget di persimpangan antara <b>engineering dan desain</b>.</p>
-      <p>Saat ini sedang fokus mendalami <b>full-stack development</b> dan mulai eksplorasi dunia machine learning.</p>
+      <!-- <p>I'm an <b>Informatics student</b> who believes that good code isn't just about logic — it's also about experience and aesthetics.</p>
+      <p>Outside of class, I actively <b>build my own projects</b>, contribute to the developer community, and keep learning new technologies. I thrive at the intersection of <b>engineering and design</b>.</p>
+      <p>Currently focused on deepening my <b>full-stack development</b> skills while exploring the world of machine learning.</p> -->
+
+      <p>Claudia is a penultimate <b>Information Systems and Technology student at Bandung Institute of Technology (ITB),</b> with a strong interest in the intersection of <b>technology, education, and business.</b></p>
+      <p>I'm currently focused on deepening my <b>programming</b> skills while exploring the world of <b>data.</b></p>
+      <p>Beyond technology, I do a lot of <b>consulting projects</b> with <b>By.U, PrivyID, and Sensync Technology</b> which demonstrates a commitment to clear communication and strategic thinking.</p>
 
       <div class="skills-grid">
-        <span class="skill-pill purple">JavaScript</span>
-        <span class="skill-pill purple">React</span>
-        <span class="skill-pill purple">Node.js</span>
-        <span class="skill-pill yellow">Python</span>
+        <span class="skill-pill purple">Python</span>
+        <span class="skill-pill purple">C</span>
+        <span class="skill-pill purple">Java</span>
         <span class="skill-pill yellow">SQL</span>
-        <span class="skill-pill white">Git & GitHub</span>
-        <span class="skill-pill white">Figma</span>
-        <span class="skill-pill white">Linux</span>
+        <span class="skill-pill yellow">Figma</span>
+        <span class="skill-pill white">Google Workspace</span>
       </div>
     </div>
 
     <div class="about-cards reveal">
-      <div class="acard">
-        <div class="acard-num" data-count="12">0</div>
-        <div class="acard-label">Project selesai</div>
+      <div class="acard acard-purple">
+        <div class="acard-num" data-count="10">0</div>
+        <div class="acard-label">Projects completed</div>
         <div class="acard-emoji">🚀</div>
       </div>
-      <div class="acard acard-yellow">
+      <div class="acard acard-purple">
         <div class="acard-num" data-count="3">0</div>
-        <div class="acard-label">Tahun coding</div>
+        <div class="acard-label">Years coding</div>
         <div class="acard-emoji">⚡</div>
       </div>
-      <div class="acard acard-yellow">
-        <div class="acard-num" data-count="8">0</div>
-        <div class="acard-label">Tech dikuasai</div>
+      <div class="acard acard-purple">
+        <div class="acard-num" data-count="5">0</div>
+        <div class="acard-label">Tech skills</div>
         <div class="acard-emoji">🛠</div>
       </div>
-      <div class="acard">
-        <div class="acard-num" data-count="100">0</div>
-        <div class="acard-label">% semangat</div>
-        <div class="acard-emoji">✨</div>
+      <div class="acard acard-purple">
+        <div class="acard-num">2+</div>
+        <div class="acard-label">Years in consulting</div>
+        <div class="acard-emoji">💼</div>
       </div>
     </div>
   </div>
@@ -750,41 +757,43 @@ footer a:hover { text-decoration: underline; }
 <div class="container">
   <div class="proj-header reveal">
     <div>
-      <div class="s-chip"><span class="s-chip-dot"></span>Karya saya</div>
-      <h2 class="s-title">Project <span class="hi">pilihan</span></h2>
+      <div class="s-chip"><span class="s-chip-dot"></span>My work</div>
+      <h2 class="s-title">Highlighted <span class="hi">projects</span></h2>
     </div>
-    <a href="https://github.com/USERNAMEKAMU" class="btn-outline" target="_blank" style="font-size:.85rem;padding:12px 24px;">Semua di GitHub ↗</a>
+    <a href="https://github.com/claudiakrid" class="btn-outline" target="_blank" style="font-size:.85rem;padding:12px 24px;">All on GitHub ↗</a>
   </div>
 
   <div class="proj-grid">
 
-    <div class="pcard wide reveal">
+    <div class="pcard reveal">
       <div class="pcard-top">
-        <div class="pcard-icon mixed">🌐</div>
+        <div class="pcard-icon mixed">🤖</div>
         <div class="pcard-links">
-          <a href="#" class="pcard-link">↗</a>
-          <a href="#" class="pcard-link">⌥</a>
+          <a href="https://github.com/KimoonTheCreator/Tugas-Besar-OOP-Semester-3-2025-2026" class="pcard-link">↗</a>
         </div>
       </div>
-      <h3 class="pcard-title">Nama Project Utama Kamu</h3>
-      <p class="pcard-desc">Deskripsi project unggulanmu. Jelaskan apa yang dibangun, masalah apa yang diselesaikan, dan kenapa ini keren. Buat orang penasaran dan ingin tahu lebih lanjut.</p>
+      <h3 class="pcard-title">Walahi I'm Cooked</h3>
+      <h3 class="pcard-subtitle">Cooking Game</h3>
+      <p class="pcard-desc">Inspired by a popular game named "Overcooked", NimonsCook implements similar logic as a pizza-cooking simulation game. This game is built by using object oriented programming techniques with the main feature includes preparing, cooking, and serving pizza based on the order in a certain limited time.</p>
       <div class="pcard-stack">
-        <span class="stk">React</span>
-        <span class="stk">Node.js</span>
-        <span class="stk">PostgreSQL</span>
-        <span class="stk y">Figma</span>
+        <span class="stk">Java</span>
+        <span class="stk">Figma</span>
+        <span class="stk">Object Oriented Programming</span>
+        <span class="stk y">Design Pattern</span>
+        <span class="stk y">Modular Programming</span>
       </div>
     </div>
 
     <div class="pcard reveal">
       <div class="pcard-top">
-        <div class="pcard-icon yellow">🤖</div>
+        <div class="pcard-icon yellow">🌐</div>
         <div class="pcard-links">
-          <a href="#" class="pcard-link">⌥</a>
+          <a href="https://github.com/Joweeverse/IF2050-2026-K02-G11-KitchenBuddy" class="pcard-link">↗</a>
         </div>
       </div>
-      <h3 class="pcard-title">Project ML / AI</h3>
-      <p class="pcard-desc">Project machine learning atau AI yang kamu buat. Apa dataset-nya? Apa hasilnya?</p>
+      <h3 class="pcard-title">KitchenBuddy</h3>
+      <h3 class="pcard-subtitle">Food Waste Management Software</h3>
+      <p class="pcard-desc">KitchenBuddy is a software built for food inventory management. User can input the food item with date purchase and expiry date so that users can track how many amount of food are used or wasted. This helps user to manage and predict food stock for future purchase.</p>
       <div class="pcard-stack">
         <span class="stk">Python</span>
         <span class="stk">TensorFlow</span>
@@ -796,30 +805,15 @@ footer a:hover { text-decoration: underline; }
       <div class="pcard-top">
         <div class="pcard-icon purple">📱</div>
         <div class="pcard-links">
-          <a href="#" class="pcard-link">↗</a>
-          <a href="#" class="pcard-link">⌥</a>
+          <a href="https://github.com/claudiakrid/Watermark_DCT" class="pcard-link">↗</a>
         </div>
       </div>
-      <h3 class="pcard-title">Project Mobile / Web</h3>
-      <p class="pcard-desc">Project ketiga kamu. Apa yang unik dari project ini dibanding yang lain?</p>
-      <div class="pcard-stack">
-        <span class="stk">React Native</span>
-        <span class="stk y">Firebase</span>
-      </div>
-    </div>
-
-    <div class="pcard reveal">
-      <div class="pcard-top">
-        <div class="pcard-icon purple">🛠</div>
-        <div class="pcard-links">
-          <a href="#" class="pcard-link">⌥</a>
-        </div>
-      </div>
-      <h3 class="pcard-title">Project Lainnya</h3>
-      <p class="pcard-desc">Project keempat — bisa tool, CLI, automation, atau apapun yang menarik.</p>
+      <h3 class="pcard-title">DCT Watermarking</h3>
+      <h3 class="pcard-subtitle">Watermarking a Picture using Python</h3>
+      <p class="pcard-desc">Watermarking is a method to make sure the picture is identified, though there is no visible mark if users see by eye. In this project, the watermarking is implemented by using DCT method.</p>
       <div class="pcard-stack">
         <span class="stk">Python</span>
-        <span class="stk">Shell</span>
+        <span class="stk y">Multimedia System</span>
       </div>
     </div>
 
@@ -827,88 +821,70 @@ footer a:hover { text-decoration: underline; }
 </div>
 </section>
 
-<!-- ══ FUN BAND ══ -->
-<div class="fun-band">
-  <div class="fun-inner">
-    <div class="fun-item reveal">
-      <div class="fun-num" data-count="12">0</div>
-      <div class="fun-label">Project selesai</div>
-    </div>
-    <div class="fun-divider"></div>
-    <div class="fun-item reveal">
-      <div class="fun-num" data-count="3">0</div>
-      <div class="fun-label">Tahun pengalaman</div>
-    </div>
-    <div class="fun-divider"></div>
-    <div class="fun-item reveal">
-      <div class="fun-num" data-count="2000">0</div>
-      <div class="fun-label">Jam coding</div>
-    </div>
-    <div class="fun-divider"></div>
-    <div class="fun-item reveal">
-      <div class="fun-num" data-count="47">0</div>
-      <div class="fun-label">Cangkir kopi ☕</div>
-    </div>
-  </div>
-</div>
-
 <!-- ══ EXPERIENCE ══ -->
 <section id="experience">
 <div class="container">
   <div class="s-chip reveal"><span class="s-chip-dot"></span>Journey</div>
-  <h2 class="s-title reveal">Pengalaman <span class="hi">&amp; Pendidikan</span></h2>
+  <h2 class="s-title reveal">Experience <span class="hi">&amp; Education</span></h2>
 
   <div class="exp-grid">
     <div class="timeline reveal">
       <div class="t-item">
-        <div class="t-date">2022 — Sekarang</div>
-        <div class="t-role">S1 Teknik Informatika</div>
-        <div class="t-company">Nama Universitas — Bandung</div>
-        <div class="t-desc">Mendalami ilmu komputer, algoritma, dan pengembangan perangkat lunak. Aktif di UKM programming dan ikut berbagai lomba.</div>
+        <div class="t-date">2024 — Present</div>
+        <div class="t-role">Information System and Technology</div>
+        <div class="t-company">Bandung Institute of Technology</div>
+        <div class="t-desc">Awards: 4+ International and National Compeititon Awards, Finalist of Duta Kampus ITB 2025, Bakti BCA Merit-Based Scholarship</div>
+        <div class="t-desc">Activities: ShARE ITB (Vice President), Gandeng Consulting (Manager), Students Catalyst, Finance for Indonesia</div>
       </div>
       <div class="t-item">
-        <div class="t-date">2024</div>
-        <div class="t-role">Web Developer — Internship</div>
-        <div class="t-company">Nama Perusahaan</div>
-        <div class="t-desc">Membangun dan maintain fitur pada aplikasi web. Kolaborasi dengan tim desain untuk menghadirkan UI/UX yang modern dan responsif.</div>
+        <div class="t-date">2026 - Present</div>
+        <div class="t-role">Business Development — Internship</div>
+        <div class="t-company">HRNet Group</div>
+        <div class="t-desc">HRNet Group is Asia's leading talent outsourcing service company headquartered in Singapore. As a business development, my responsibilities include market research and analysis and conducting client search for HRNet's products.</div>
       </div>
       <div class="t-item">
-        <div class="t-date">2023</div>
-        <div class="t-role">Finalis — Hackathon XYZ</div>
-        <div class="t-company">Nama Event</div>
-        <div class="t-desc">Membangun solusi inovatif dalam 24 jam bersama 3 orang teman. Berhasil masuk final dari 50+ tim peserta.</div>
+        <div class="t-date">2026</div>
+        <div class="t-role">Project Partner</div>
+        <div class="t-company">Sensync Technology</div>
+        <div class="t-desc">Managed an 8-member team in a 4-month strategy project for Sensync, overseeing research and quality assurance across product and marketing workstreams. The project generated IoT product development recommendations and a B2B growth strategy through expert interviews, hypothesis validation, and close collaboration with the CEO and senior stakeholders.</div>
+      </div>
+      <div class="t-item">
+        <div class="t-date">2025</div>
+        <div class="t-role">Vice Project Lead</div>
+        <div class="t-company">By.U</div>
+        <div class="t-desc">Led a three-member product strategy team to identify growth opportunities for By.U. Through comprehensive market and user research, including usability testing and industry expert interviews, the project delivered recommendations for product improvements and a Gen Z penetration strategy spanning both app development and marketing efforts.</div>
       </div>
     </div>
 
     <div class="reveal">
-      <p style="font-size:.82rem;font-weight:700;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;margin-bottom:20px;">Sertifikasi & Pencapaian</p>
+      <p style="font-size:.82rem;font-weight:700;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;margin-bottom:20px;">Certifications &amp; Achievements</p>
       <div class="cert-list">
         <div class="cert-card">
           <div class="cert-icon">🏅</div>
           <div>
-            <div class="cert-name">Nama Sertifikasi 1</div>
-            <div class="cert-issuer">Penerbit — 2024</div>
+            <div class="cert-name">2nd Winner of Singapore Business Case Competition</div>
+            <div class="cert-issuer">Nanyang Technological University — 2026</div>
+          </div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon">🏅</div>
+          <div>
+            <div class="cert-name">3rd Winner of GBMF International Business Case Competition</div>
+            <div class="cert-issuer">Ganesha Business Management Festival — 2025</div>
           </div>
         </div>
         <div class="cert-card">
           <div class="cert-icon">⭐</div>
           <div>
-            <div class="cert-name">Nama Sertifikasi 2</div>
-            <div class="cert-issuer">Penerbit — 2023</div>
+            <div class="cert-name">Bakti BCA Merit-Based Scholarship</div>
+            <div class="cert-issuer">Bakti BCA — 2026</div>
           </div>
         </div>
         <div class="cert-card">
-          <div class="cert-icon">🎯</div>
+          <div class="cert-icon">⭐</div>
           <div>
-            <div class="cert-name">Kompetisi / Lomba</div>
-            <div class="cert-issuer">Juara 2 — 2023</div>
-          </div>
-        </div>
-        <div class="cert-card">
-          <div class="cert-icon">📚</div>
-          <div>
-            <div class="cert-name">Kursus / Bootcamp</div>
-            <div class="cert-issuer">Platform — 2022</div>
+            <div class="cert-name">Finalist of Duta Kampus ITB 2025</div>
+            <div class="cert-issuer">DITMAWA ITB — 2025</div>
           </div>
         </div>
       </div>
@@ -923,12 +899,12 @@ footer a:hover { text-decoration: underline; }
   <div class="s-chip reveal" style="margin:0 auto;width:fit-content"><span class="s-chip-dot"></span>Let's talk</div>
 
   <div class="contact-box reveal">
-    <p class="contact-title">Punya ide? Yuk <span>ngobrol</span> dulu!</p>
-    <p class="contact-sub">Terbuka untuk magang, kolaborasi project, atau sekadar diskusi soal teknologi ☕</p>
+    <p class="contact-title">Got an idea? Let's <span>talk</span>!</p>
+    <p class="contact-sub">Open to internships, project collaborations, or a chat about tech and business</p>
     <div class="contact-links">
-      <a href="mailto:emailkamu@gmail.com" class="cbtn cta">✉ Kirim Email</a>
-      <a href="https://linkedin.com/in/username" class="cbtn yell" target="_blank">in LinkedIn</a>
-      <a href="https://github.com/username" class="cbtn ghost" target="_blank">⌥ GitHub</a>
+      <a href="mailto:claudia.krid@gmail.com" class="cbtn cta">✉ Send Email</a>
+      <a href="https://linkedin.com/in/claudiakrid" class="cbtn ghost" target="_blank">in LinkedIn</a>
+      <a href="https://github.com/claudiakrid" class="cbtn ghost" target="_blank">⌥ GitHub</a>
     </div>
   </div>
 </div>
@@ -936,9 +912,9 @@ footer a:hover { text-decoration: underline; }
 
 <!-- ══ FOOTER ══ -->
 <footer>
-  <span class="footer-logo">NK<span style="display:inline-block;width:6px;height:6px;background:var(--yellow);border-radius:50%;margin-left:2px;vertical-align:middle"></span></span>
-  <span>Dibuat dengan ❤ oleh <a href="#">[Nama Kamu]</a> · 2025</span>
-  <a href="#hero">Kembali ke atas ↑</a>
+  <span class="footer-logo">C<span style="display:inline-block;width:6px;height:6px;background:var(--yellow);border-radius:50%;margin-left:2px;vertical-align:middle"></span></span>
+  <span>Claudia Melati Krid</a> · 2025</span>
+  <a href="#hero">Back to top ↑</a>
 </footer>
 
 <script>
